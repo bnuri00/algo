@@ -3,15 +3,41 @@ package day231021;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.StringTokenizer;
 
 
+/**
+ * 안돌아감
+ */
 public class boj_1450 {
 
 	public static int N, C;
 
 
 	// binarySearch
+
+
+	public static int binarySearch(ArrayList<Integer> sum, int target) {
+		int left = 0;
+		int right = sum.size() - 1;
+		int mid;
+		int answer = -1;
+
+		while (left <= target) {
+			mid = (left + right) / 2;
+			if (sum.get(mid) <= target) {
+				answer = mid;
+				left = mid + 1;
+			} else {
+				right = mid - 1;
+			}
+		}
+
+		return answer;
+	}
+
+
 	// dfs
 	public static void dfs(int idx, int sum, ArrayList<Integer> weight, ArrayList<Integer> answer) {
 		// end condition
@@ -39,8 +65,9 @@ public class boj_1450 {
 		ArrayList<Integer> weight1 = new ArrayList<>();
 		ArrayList<Integer> weight2 = new ArrayList<>();
 
+		st = new StringTokenizer(br.readLine());
 		for (int i = 0; i < N; i++) {
-			st = new StringTokenizer(br.readLine());
+
 			if (i < N / 2) {
 				weight1.add(Integer.parseInt(st.nextToken()));
 			} else {
@@ -53,6 +80,13 @@ public class boj_1450 {
 
 		dfs(0, 0, weight1, sum1);
 		dfs(0, 0, weight2, sum2);
+
+		Collections.sort(sum2);
+		int answer = 0;
+		for (int i = 0; i < sum1.size(); i++) {
+			int setValue = C - sum1.get(i);
+			answer += binarySearch()
+		}
 
 	}
 

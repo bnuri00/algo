@@ -9,6 +9,10 @@ import java.util.Queue;
 import java.util.StringTokenizer;
 
 
+/**
+ * 미로 탐색
+ */
+
 public class boj_2178 {
 
 	public static int N, M; // 세로, 가로

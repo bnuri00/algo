@@ -7,6 +7,10 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 
+/**
+ * 욕심쟁이 판다
+ */
+
 public class boj_1937 {
 
 	public static int N;

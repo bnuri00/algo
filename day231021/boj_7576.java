@@ -9,6 +9,9 @@ import java.util.Queue;
 import java.util.StringTokenizer;
 
 
+/**
+ * 토마토
+ */
 public class boj_7576 {
 
 	public static int N, M; // 세로, 가로
