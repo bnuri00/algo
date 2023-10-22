@@ -10,7 +10,9 @@ import java.util.StringTokenizer;
 
 
 /**
+ * TODO: 다시 풀기
  * 토마토
+ * dp로 풀기 실패
  */
 public class boj_7576 {
 

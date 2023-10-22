@@ -1,6 +1,6 @@
 /out
 /.idea
-java-algo.iml
+*.iml
 
 # Default ignored files
 /shelf/
