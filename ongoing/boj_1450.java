@@ -14,7 +14,6 @@ public class boj_1450 {
 
 	public static int N, C;
 
-
 	// binarySearch
 
 
@@ -85,7 +84,7 @@ public class boj_1450 {
 		int answer = 0;
 		for (int i = 0; i < sum1.size(); i++) {
 			int setValue = C - sum1.get(i);
-			answer += binarySearch()
+			//			answer += binarySearch()
 		}
 
 	}
