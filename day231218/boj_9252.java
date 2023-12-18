@@ -7,6 +7,8 @@ import java.io.InputStreamReader;
 
 
 /*
+ * 18316 KB	160 ms
+ *
  * 풀이시간: 2시간+
  * 참고: lcs 알고리즘 학습 자료
  *
