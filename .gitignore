@@ -1,6 +1,7 @@
 /out
 /.idea
 *.iml
+/test
 
 # Default ignored files
 /shelf/
