@@ -7,14 +7,7 @@ import java.io.InputStreamReader;
 import java.util.*;
 
 
-/*
- *
- * <풀이>
- *   - 그래프 간선 입력받기
- *   - bfs로 끝까지 가기
- *   - 처음-끝 조합 방문] 체크
- */
-public class boj_1167_fail {
+public class boj_1167_fail_bfs {
 
 	private static int V;
 	private static List<Edge>[] adjList;
