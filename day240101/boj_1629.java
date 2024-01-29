@@ -8,6 +8,8 @@ import java.util.StringTokenizer;
 
 
 /*
+ * 참고: 모듈러 연산 성질 (a*b)%c = (a%c * b%c)%c
+ *
  * 최대 2147483647번 곱함 -> 분할정복!!!
  *
  * 자료형 주의!!
