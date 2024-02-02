@@ -31,15 +31,14 @@ public class boj_29155 {
 
 	private static int logic() {
 		int totalTime = 0;
-		int prevProblemTime = -1;
 
 		for (int i = 1; i <= 5; i++) {
-
-			for (int j = 0; j < problemCountArr[i]; j++) {  // 시간이 조금 필요한 문제부터 풀기
+			int prevProblemTime = -1;
+			while (problemCountArr[i]-- > 0) {  // 시간이 조금 필요한 문제부터 풀기
 				int currProblemTime = problemQ[i].poll();
 				totalTime += currProblemTime;
 
-				if (j > 0) {    // 현재 난이도 첫문제가 아닌 경우 휴식시간
+				if (prevProblemTime != -1) {    // 현재 난이도 첫문제가 아닌 경우 휴식시간
 					totalTime += currProblemTime - prevProblemTime;
 				}
 				prevProblemTime = currProblemTime;
